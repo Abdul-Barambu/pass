@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+.login-container {
+    background-color: whitesmoke;
+    background-size: 100% 100%, 100% 100%, auto;
+    background-repeat: no-repeat, no-repeat, repeat;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 60px 55px 33px 55px;
+
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    /* background: whitesmoke; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 32%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.img-text {
+    text-align: center;
+}
+
+img.img-login-logo {
+    width: 50px;
+    height: 53px;
+}
+
+p.wel-text {
+    font-size: 1.7rem;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+div.inputs {
+    padding-top: 15%;
+}
+
+/* Forms */
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 10px 0;
+    outline: none;
+    border-bottom: 2px solid rgb(166, 161, 161);
+}
+
+.input:focus {
+    border-bottom: 2px solid #007bff;
+    transition: transform 1.5s, border-bottom 1.5s ease;
+}
+
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-family: "Poppins", sans-serif;
+    color: rgb(160, 156, 156);
+    transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+span.eye-icon{
+   display: flex;
+   justify-content: end;
+   margin-top: -2rem;
+   color: rgb(160, 156, 156);
+}
+
+.input:focus + .label,
+.input:valid + .label,
+.input:placeholder-shown + .label {
+    transform: translateY(-200%);
+}
+
+/* button */
+button.login-btn {
+    background: #555;
+    border-radius: 25px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 auto;
+    font-family: "Poppins";
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    transition: all .4s, transform .7s;
+}
+
+button.login-btn:hover {
+    background-image: linear-gradient(100deg, #e030ad, #2ec3c3, #3f9b7f, #37c0fb);
+    transform: translateY(-5px);
+}
+
+/* texts */
+p.forgot-password {
+    text-align: center;
+    margin: 1.3rem;
+    font-family: "Poppins";
+    color: #21d4fd;
+    font-size: 14px;
+    line-height: 1.7;
+    transition: all .4s;
+}
+
+p.forgot-password:hover {
+    text-align: center;
+    margin: 1.3rem;
+    font-family: "Poppins";
+    color: #076ad4;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 1.7;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+p.have-account {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    cursor: pointer;
+}
+
+span.register {
+    color: #007bff;
+}
+
+span.register:hover {
+    color: #0063cc;
+}
+
+@media screen and (max-width:900px) {
+    .login-container {
+        background-color: whitesmoke;
+        background-size: 100% 100%, 100% 100%, auto;
+        background-repeat: no-repeat, no-repeat, repeat;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 60px 55px 33px 55px;
+    
+        box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        /* background: whitesmoke; */
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p.wel-text {
+        font-size: 1.2rem;
+        line-height: 1.1;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .login-container {
+        background-color: whitesmoke;
+        background-size: 100% 100%, 100% 100%, auto;
+        background-repeat: no-repeat, no-repeat, repeat;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 30px 35px 10px 35px;
+    
+        box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        /* background: whitesmoke; */
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p.wel-text {
+        font-size: 1.2rem;
+        line-height: 1.1;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    div.inputs {
+        padding-top: 10%;
+    }
+
+    .input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        padding: 5px 0;
+        outline: none;
+        border-bottom: 2px solid rgb(166, 161, 161);
+    }
+
+    button.login-btn {
+        background: #555;
+        border-radius: 25px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 0 auto;
+        font-family: "Poppins";
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 1.2;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        width: 100%;
+        height: 40px;
+        transition: all .4s, transform .7s;
+    }
+
+    label{
+        font-size: 0.8rem;
+    }
+    
+}

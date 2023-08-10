@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+nav.navbar {
+    padding: 1.2rem 0 1.3rem 6rem;
+    background: whitesmoke;
+}
+
+img.img-logo {
+    width: 35px;
+    height: 38px;
+}
+
+.pass-text {
+    margin-left: 1rem;
+    font-family: "Poppins";
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #2ec3c3;
+}
+
+.s-text {
+    font-family: "Poppins";
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #e044ad;
+}
+
+.pa-text {
+    font-family: "Poppins";
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #37c0fb;
+}
+
+
+span.pass-text:nth-child(1) {
+    color: red;
+}
+
+a.navbar-brand {
+    margin: 0;
+}
+
+a.nav-link {
+    font-family: "Philosopher";
+    font-size: 20px;
+    color: gray !important;
+    padding: 0 1rem !important;
+}
+
+.dropdown-menu {
+    background: whitesmoke !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.dropdown-item {
+    font-family: "Philosopher";
+    font-size: 18px;
+    color: rgb(43, 40, 40);
+}
+
+div.buttons {
+    display: inline-flex;
+    margin-left: auto;
+    gap: 1rem;
+    justify-content: end !important;
+    align-items: center;
+}
+
+button.btn-login {
+    background-color: #e03191;
+    border-radius: 25px;
+    border: 0;
+    outline: none;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    line-height: 1;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-width: 10em;
+    height: 40px;
+}
+
+button.btn-login:hover {
+    background-image: linear-gradient(100deg, #e030ad, #2ec3c3, #3f9b7f, #37c0fb);
+}
+
+button.btn-get {
+    background-color: #37c0fb;
+    border-radius: 25px;
+    border: 0;
+    outline: none;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    line-height: 1;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-width: 10em;
+    height: 40px;
+}
+
+button.btn-get:hover {
+    background-image: linear-gradient(100deg, #e030ad, #2ec3c3, #3f9b7f, #37c0fb);
+}
+
+
+@media screen and (max-width: 900px) {
+    nav.navbar {
+        padding: .5rem 0 1.3rem 1rem;
+        background: whitesmoke;
+    }
+
+    img.img-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .pass-text {
+        margin-left: .5rem;
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #2ec3c3;
+    }
+
+    .nav-home {
+        margin-top: 2rem !important;
+    }
+
+    a.nav-link {
+        font-family: "Philosopher";
+        font-size: 20px;
+        color: gray;
+        padding: 1rem 0 !important;
+        display: flex;
+    }
+
+    div.buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end !important;
+        align-items: center;
+        margin-top: 1rem;
+        margin-right: 2rem;
+    }
+
+    .dropdown-menu {
+        background: whitesmoke !important;
+        width: 45%;
+        border-top: none !important;
+        border-bottom: none !important;
+    }
+
+    .dropdown-item {
+        font-family: "Philosopher";
+        font-size: 18px;
+        padding-top: .5rem !important;
+        color: rgb(43, 40, 40);
+    }
+}
